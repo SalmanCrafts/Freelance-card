@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text&family=Spectral+SC&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+body{
+   background-color: grey; 
+   display: flex;
+   justify-content: center;
+}
+#main_container{
+    height: 500px;
+    width: 320px;
+    padding-top: 6%;
+    /* border: 2px solid brown; extra border  */
+}
+#inner_container , #secondpage{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    border: 1px solid white;
+}
+#img_div, #upper{
+  height: 180px;
+  width: 100%;
+  background-color: white;
+  border-radius: 0 0 20% 30%;
+  border: 2px solid brown;
+  display: flex;
+  justify-content: center;
+  padding-top: 5%;
+  cursor: pointer;
+}
+#div_image{
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    background-image: url(portfolio.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#content_div{
+    color: white;
+    text-align: center;
+    padding: 2%;
+}
+#content_div h1, #lower h2{
+    font-family: "Spectral SC", serif;
+    font-size: 26px;
+}
+#content_div h2, #lower h3{
+    font-family: "DM Serif Text", serif;
+    font-size: 18px;
+    font-weight: 200;
+    font-style: italic;
+    letter-spacing: 1.5px;
+}
+#content_div ul {
+    list-style-type: none;
+    padding: 0;
+}
+#content_div ul li a{
+    text-decoration: none;
+    color: white;
+}
+#content_div ul li{
+    margin-top:3%;
+}
+ #content_div ul li a:hover{
+    color: green;
+    font-size: medium;
+}
+#content_div ul li span:hover{
+    cursor: pointer;
+    color: brown;
+    letter-spacing: 2px;
+} 
+#extra_div{
+    /* height: 73px; */
+    height: 4.5rem;
+    width: 100%;
+    background-color: white;
+    border-radius: 50% 50% 0 0;
+    border: 1px solid black;
+    cursor: pointer;
+}
+#secondpage{
+    background-color: white;
+    border-color: black;
+}
+#upper{
+    background-color: black;
+}
+#qr_code{
+    height: 150px;
+    width: 150px;
+    background-image: url(./frame.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#lower{
+    text-align: center;
+    padding: 0.5rem;
+}
+#lower p {
+    font-size: 17px;
+    font-family: 'Times New Roman', Times, serif;
+}
+#lower h4{
+    margin-top: 0.2rem;
+    margin-left: 80%;
+}
+#lower h4 a{
+    color: black;
+   font-size: 24px; 
+}
+#lower h4 a:hover{
+    color: brown;
+}
+.content-div {
+    transition: opacity 0.5s ease;
+    opacity: 1;
+  }
+
+  .hidden {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.5s ease;
+  }
